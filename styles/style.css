@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --first-color: hsl(228, 66%, 53%);
+  --second-color: hsl(25, 83%, 53%);
+  --title-color: hsl(228, 57%, 28%);
+  --text-color: hsl(228, 15%, 50%);
+  --body-color: #fff;
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --ff-jost: 'Jost', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.7;
+  transition: .3s;
+  scroll-behavior: smooth;
+}
+
+body.active { overflow: hidden; }
+
+li { list-style: none; }
+
+html {
+  font-family: var(--body-font);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+img,
+span,
+button,
+ion-icon { display: block; }
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  color: var(--gunmetal);
+  line-height: 1.3;
+}
+
+.h1,
+.h2 { font-size: var(--fs-1); }
+
+.h3 { font-size: var(--fs-2); }
+
+.h3,
+.h4 { font-weight: var(--fw-600); }
+
+.h4 { font-size: var(--fs-3); }
+
+/*HTML CODE*/
+
+.w1024{
+  width:1024px;
+  height: 820px;
+  margin: 50px auto;
+}
+
+.face{
+  width: 1024px;
+  height: 620px;
+  border-radius:200px 200px 700px 700px;
+  background-color: beige;
+}
+
+.eyescont{
+  width: 900px;
+  height: 200px;
+  margin: 100px 56px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye{
+  width: 250px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.eye:hover .eyealt{
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+}
+
+.eyealt{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.mouthcont{
+  width: 600px;
+  height: 150px;
+  margin-top: 350px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.mouth{
+  width: 400px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: black;
+  margin: 60px auto;
+}
